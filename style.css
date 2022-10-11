@@ -39,7 +39,7 @@ p{
 }
 
 .container{
-    max-width: 1460px;
+    max-width: 1440px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -158,4 +158,19 @@ h4{
 
 .col-4:hover{
     transform: translateY(-10px);
+}
+
+.offer{
+    background: radial-gradient(#ffcf31,#331e6d);
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+.col-2 .offer-text
+{
+    padding-left: 175px;
 }
