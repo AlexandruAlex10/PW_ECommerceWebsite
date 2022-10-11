@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Inter Tight', sans-serif;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -74,6 +78,14 @@ p{
     transition: background 0.5s;
 }
 
+.btn:hover{
+    background: #000000;
+}
+
 .header{
     background: radial-gradient(#ffcf31,#331e6d);
+}
+
+.header .row{
+    margin-top: 70px;
 }
