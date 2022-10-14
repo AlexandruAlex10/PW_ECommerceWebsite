@@ -174,3 +174,44 @@ h4{
 {
     padding-left: 175px;
 }
+
+/* testimonial */
+
+.testimonial{
+    padding-top: 100px;
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 1.0s;
+}
+
+.testimonial col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #331e6d;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #331e6d;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color:#331e6d;
+    font-size: 16px;
+}
