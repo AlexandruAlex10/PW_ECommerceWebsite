@@ -189,7 +189,7 @@ h4{
     transition: 1.0s;
 }
 
-.testimonial col-3 img{
+.testimonial .col-3 img{
     width: 50px;
     margin-top: 20px;
     border-radius: 50%;
