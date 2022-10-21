@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
-/*              Sass Template (command to update: npm start)          */
+/*              Sass Template           */
 /*  global classes  */
 button, button:focus {
   outline: none !important;
@@ -58,6 +58,40 @@ button, button:focus {
 
 .color-yellow-bg {
   background: #FFD289;
+}
+
+/*  top sale template   */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #331e6d;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
