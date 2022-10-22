@@ -1,0 +1,8 @@
+Step 1:
+Open up xampp control pannel.
+
+Step 2:
+In xampp control pannel, start Apache and MySQL modules.
+
+Step 3:
+Enjoy! :))
