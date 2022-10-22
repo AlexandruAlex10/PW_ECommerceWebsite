@@ -5,4 +5,10 @@ Step 2:
 In xampp control pannel, start Apache and MySQL modules.
 
 Step 3:
+Search for:
+Main Page: http://localhost/a-tech/a-tech/index.php
+Product Page: http://localhost/a-tech/a-tech/product.php
+Cart Page: http://localhost/a-tech/a-tech/cart.php
+
+Step 4:
 Enjoy! :))
