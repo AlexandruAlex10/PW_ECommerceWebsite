@@ -7,10 +7,6 @@
     /* include cart section */
     include('Template/_cart-template.php');
     /* include cart section */
-
-    /* include top sale section */
-    include('Template/_top-sale.php');
-    /* include top sale section */
 ?>
 
 <?php

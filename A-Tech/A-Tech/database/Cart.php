@@ -17,9 +17,11 @@ class Cart
         {
             if($params != null)
             {
+                //get table columns
                 $columns = implode(',', array_keys($params));
                 $values = implode(',', array_values($params));
 
+                //create sql query
                 $query_string = sprintf("INSERT INTO %s(%s) VALUES(%s)", $table, $columns, $values);
 
                 //execute query
@@ -39,13 +41,24 @@ class Cart
                 "item_id" => $itemid
             );
 
-            //insert into cart
+            //insert data into cart
             $result = $this->insertIntoCart($params);
             if($result)
             {
                 //reload page
-                header("Location:" . $_SERVER['PHP_SELF']);
+                header("Location:" .$_SERVER['PHP_SELF']);
             }
+        }
+    }
+
+    // calculate sub total
+    public function getSum($arr){
+        if(isset($arr)){
+            $sum = 0;
+            foreach ($arr as $item){
+                $sum += floatval($item[0]);
+            }
+            return sprintf('%.2f' , $sum);
         }
     }
 }

@@ -16,4 +16,4 @@
     $product_shuffle = $product->getData();
 
     //Cart Object
-    $cart = new Cart($db);
+    $Cart = new Cart($db);
