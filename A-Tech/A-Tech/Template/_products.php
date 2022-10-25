@@ -24,16 +24,20 @@
                     </div>
                     <div class="col">
                         <form method="post">
-                        <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
-                        <input type="hidden" name="user_id" value="<?php echo 1; ?>">
-                        <button type="submit" name="product_info_submit" class="btn btn-warning form-control">Add to Cart</button>
+                            <?php
+                            if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
+                                echo '<button type="submit" disabled class="btn btn-success font-size-16 form-control">In the Cart</button>';
+                            }else{
+                                echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-16 form-control">Add to Cart</button>';
+                            }
+                            ?>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 py-5">
                 <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown"; ?></h5>
-                <small><?php echo "by", $item['item_brand'] ?? "Brand"; ?></small>
+                <p><?php echo "by ", $item['item_brand'] ?? "Brand"; ?></p>
                 <div class="d-flex">
                     <div class="rating text-warning font-size-12">
                         <span><i class="fas fa-star"></i></span>
@@ -95,7 +99,6 @@
                     <small>Sold by <a href="#">AT Productions </a>(4.7 out of 5 | 72061 ratings)</small>
                 </div>
                 <!-- !order-details -->
-            </div>
 
             <div class="col-12">
                 <br>

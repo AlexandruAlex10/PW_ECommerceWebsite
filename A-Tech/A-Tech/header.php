@@ -41,7 +41,6 @@
             49814, 906-339-0632</p>
         <div class="font-rale font-size-14">
             <a href="#" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
         </div>
     </div>
 

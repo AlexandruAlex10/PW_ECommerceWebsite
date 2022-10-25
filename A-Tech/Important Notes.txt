@@ -1,0 +1,27 @@
+This website is a prototype... don't expect too much from it please :<
+
+~~~~~~~~~~~~~~~~~~
+
+Bugs/Unimplemented features: 
+- can't add product to cart from product details page.
+
+- most of the anchors are no responding... haven't put any links to them, 
+they just have none ('#)... it's a prototype, I remind you...
+
+- register/login is not implemented... you are a client if you don't have 
+access to the database.
+If you have access to the database you're admin (and also client).
+
+- can't delete items from wishlist, you need to put them into cart or manually delete
+them from wishlist table.
+
+- when adding items from cart to wishlist and vice-versa it says internal server 
+error, just back out from that and it just... fix it... kinda... at some degree 
+(you know what I mean...).
+
+- also stuff can brake sometimes... give the server a restart and also maybe... 
+pray, I dunno. xD
+
+~~~~~~~~~~~~~~~~~~
+
+Enjoy, I've put a lot of love into it! :-)

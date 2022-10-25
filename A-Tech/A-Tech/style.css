@@ -65,7 +65,7 @@ button, button:focus {
   overflow: hidden;
 }
 #top-sale .owl-carousel .item .product img {
-  transition: transform 0.5s ease;
+  transition: transform 1.0s ease;
 }
 #top-sale .owl-carousel .item .product img:hover {
   transform: scale(1.1);
