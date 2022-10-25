@@ -1,19 +1,21 @@
 <?php
-    //require MySQL Connection
-    require('database/DBController.php');
 
-    //require Product Class
-    require('database/Product.php');
+// require MySQL Connection
+require ('database/DBController.php');
 
-    //require Cart Class
-    require('database/Cart.php');
+// require Product Class
+require ('database/Product.php');
 
-    //Db Controller Object
-    $db = new DBController();
+// require Cart Class
+require ('database/Cart.php');
 
-    //Product Object
-    $product = new Product($db);
-    $product_shuffle = $product->getData();
 
-    //Cart Object
-    $Cart = new Cart($db);
+// DBController object
+$db = new DBController();
+
+// Product object
+$product = new Product($db);
+$product_shuffle = $product->getData();
+
+// Cart object
+$Cart = new Cart($db );

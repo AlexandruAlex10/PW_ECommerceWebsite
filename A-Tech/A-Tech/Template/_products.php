@@ -6,7 +6,7 @@
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         if (isset($_POST['product_info_submit'])){
             // call method addToCart
-            $cart->addToCart($_POST['user_id'], $_POST['item_id']);
+            $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
         }
     }
 
@@ -33,7 +33,7 @@
             </div>
             <div class="col-sm-6 py-5">
                 <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown"; ?></h5>
-                <small><?php echo $item['item_brand'] ?? "Brand"; ?></small>
+                <small><?php echo "by", $item['item_brand'] ?? "Brand"; ?></small>
                 <div class="d-flex">
                     <div class="rating text-warning font-size-12">
                         <span><i class="fas fa-star"></i></span>
@@ -95,22 +95,6 @@
                     <small>Sold by <a href="#">AT Productions </a>(4.7 out of 5 | 72061 ratings)</small>
                 </div>
                 <!-- !order-details -->
-
-                <div class="row">
-                    <div class="col-6">
-                        <!-- product qty section -->
-                        <div class="qty d-flex">
-                            <h6 class="font-baloo">Quantity:</h6>
-                            <div class="px-4 d-flex font-rale">
-                                <button class="qty-up border bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button>
-                                <input type="text" data-id="pro1" class="qty_input border px-2 w-50 bg-light" disabled value="1"
-                                       placeholder="1">
-                                <button data-id="pro1" class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
-                            </div>
-                        </div>
-                        <!-- !product qty section -->
-                    </div>
-                </div>
             </div>
 
             <div class="col-12">
