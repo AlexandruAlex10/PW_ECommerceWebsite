@@ -1,13 +1,22 @@
 <!-- Shopping cart section  -->
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if(isset($_POST['delete-cart-item-submit'])){
-        $deleteRecord = $Cart->deleteCart($_POST['item_id']);
-    }
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if (isset($_POST['delete-cart-item-submit'])){
+            $deletedrecord = $Cart->deleteCart($_POST['item_id']);
+        }
+
+        if(isset($_POST['wishlist-submit'])){
+            $Cart->saveForLater($_POST['item_id'], 'wishlist', 'cart');
+        }
 
     // save for later
     if (isset($_POST['wishlist-submit'])){
         $Cart->saveForLater($_POST['item_id']);
+    }
+
+    if (isset($_POST['delete-all-cart-submit'])){
+        $deletedrecords = $Cart->deleteAllCart();
+        header("LOCATION: order.php");
     }
 }
 ?>
@@ -82,7 +91,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                     <h6 class="font-size-12 font-rale text-success py-3"><i class="fas fa-check"></i> Your order is eligible for FREE Delivery.</h6>
                     <div class="border-top py-4">
                         <h5 class="font-baloo font-size-20">Subtotal ( <?php echo isset($subTotal) ? count($subTotal) : '0'; ?> items):&nbsp; <span class="text-danger">$<span class="text-danger" id="deal-price"><?php echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?></span> </span> </h5>
-                        <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+                        <form method="post">
+                            <button type="submit" name="delete-all-cart-submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+                        </form>
                     </div>
                 </div>
             </div>

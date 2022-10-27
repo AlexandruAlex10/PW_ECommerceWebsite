@@ -40,16 +40,16 @@ Monitors:
 
 // https://altex.ro/monitor-gaming-led-va-lenovo-g24e-20-23-8-full-hd-100hz-amd-freesync-negru/cpd/MON66D7GAR1EU/
 
-// https://altex.ro/monitor-gaming-curbat-lcd-va-asus-tuf-vg328h1b-31-5-full-hd-165hz-freesync-negru/cpd/MONVG328H1B/
+https://altex.ro/monitor-gaming-curbat-lcd-va-asus-tuf-vg328h1b-31-5-full-hd-165hz-freesync-negru/cpd/MONVG328H1B/
 
 
 Consoles:
 
-// https://www.emag.ro/consola-playstation-5-b-chassis-ps-so-9709190/pd/DTBPHPMBM/?X-Search-Id=03537af6fb8a7d2d9521&X-Product-Id=89187266&X-Search-Page=1&X-Search-Position=8&X-Section=search&X-MB=0&X-Search-Action=view
+https://www.emag.ro/consola-playstation-5-b-chassis-ps-so-9709190/pd/DTBPHPMBM/?X-Search-Id=03537af6fb8a7d2d9521&X-Product-Id=89187266&X-Search-Page=1&X-Search-Position=8&X-Section=search&X-MB=0&X-Search-Action=view
 
-// https://altex.ro/consola-microsoft-xbox-series-x-1tb-negru/cpd/CNSXSERIESX1TB/
+https://altex.ro/consola-microsoft-xbox-series-x-1tb-negru/cpd/CNSXSERIESX1TB/
 
-// https://altex.ro/consola-nintendo-switch-oled-white/cpd/CNSNSWOLEDWH/
+https://altex.ro/consola-nintendo-switch-oled-white/cpd/CNSNSWOLEDWH/
 
 
 Projectors:

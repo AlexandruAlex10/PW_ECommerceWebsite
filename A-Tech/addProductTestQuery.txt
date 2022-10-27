@@ -1,0 +1,5 @@
+Brand: 		Asus
+Name: 		LCD VA TUF VG328H1B
+Price: 		310.00
+Image: 		./images/Monitor/monitor_asus.png
+Reg. date: 	2022-10-27 16:02:21

@@ -40,6 +40,7 @@
         <p class="font-rale font-size-14 text-black-50 m-0">Showroom - 1225 Wood Duck Drive, Champion, MI, Michigan,
             49814, 906-339-0632</p>
         <div class="font-rale font-size-14">
+            <a href="add.php" class="px-3 border-right border-left text-dark">Add a new product</a>
             <a href="#" class="px-3 border-right border-left text-dark">Login</a>
         </div>
     </div>

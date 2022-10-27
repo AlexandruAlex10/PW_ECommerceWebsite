@@ -96,5 +96,40 @@ class Cart
         }
     }
 
+    // delete cart item using wishlist item id
+    public function deleteWishlist($item_id = null, $table = 'wishlist'){
+        if($item_id != null){
+            $result = $this->db->con->query("DELETE FROM {$table} WHERE item_id={$item_id}");
+            if($result){
+                header("Location:" . $_SERVER['PHP_SELF']);
+            }
+            return $result;
+        }
+    }
+
+    // Add to Cart from Wishlist
+    public function addToCartFromWishlist($item_id = null, $saveTable = "cart", $fromTable = "wishlist"){
+        if ($item_id != null){
+            $query = "INSERT INTO {$saveTable} SELECT * FROM {$fromTable} WHERE item_id={$item_id};";
+            $query .= "DELETE FROM {$fromTable} WHERE item_id={$item_id};";
+
+            // execute multiple query
+            $result = $this->db->con->multi_query($query);
+
+            if($result){
+                header("Location :" . $_SERVER['PHP_SELF']);
+            }
+            return $result;
+        }
+    }
+
+    //delete everything from cart
+    public function deleteAllCart($table = 'cart'){
+        $result = $this->db->con->query("DELETE FROM {$table}");
+        if($result){
+            header("Location:" . $_SERVER['PHP_SELF']);
+        }
+        return $result;
+    }
 
 }

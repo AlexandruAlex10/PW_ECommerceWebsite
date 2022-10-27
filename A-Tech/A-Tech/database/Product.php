@@ -11,6 +11,11 @@ class Product
         $this->db = $db;
     }
 
+    //add product to database
+    /*public function addProduct($table = 'product', $id, $brand, $name, $price, $image, $date){
+        return $this->db->con->query("INSERT INTO {$table} ($id, $brand, $name, $price, $image, $date) VALUES ('', ?, ?, ?, ?, NOW())");
+    }*/
+
     //Fetch product data using getData method
     public function getData($table = 'product')
     {
